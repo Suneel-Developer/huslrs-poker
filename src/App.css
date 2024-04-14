@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Thin";
+  src: url(./fonts/HelveticaNeueLTPro-Thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Light";
+  src: url(./fonts/HelveticaNeueLTPro-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Medium";
+  src: url(./fonts/HelveticaNeueLTPro-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Bold";
+  src: url(./fonts/HelveticaNeueLTPro-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Heavy";
+  src: url(./fonts/HelveticaNeueLTPro-Heavy.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTPro-Black";
+  src: url(./fonts/HelveticaNeueLTPro-Black.otf) format("opentype");
+}
+
+/* fonts classes  */
+
+.f-helvetica-thin {
+  font-family: "HelveticaNeueLTPro-Thin", Arial, sans-serif;
+}
+
+.f-helvetica-light {
+  font-family: "HelveticaNeueLTPro-Light", Arial, sans-serif;
+}
+
+.f-helvetica-medium {
+  font-family: "HelveticaNeueLTPro-Medium", Arial, sans-serif;
+}
+
+.f-helvetica-bold {
+  font-family: "HelveticaNeueLTPro-Bold", Arial, sans-serif;
+}
+
+.f-helvetica-heavy {
+  font-family: "HelveticaNeueLTPro-Heavy", Arial, sans-serif;
+}
+
+.f-helvetica-black {
+  font-family: "HelveticaNeueLTPro-Black", Arial, sans-serif;
+}
+
+/* Header Blur Background  */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.hero-container {
+  background-image: url("./assets/huslrspoker.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    background-position: left center;
+  }
+}
+
+/* Scroller Btn  */
+.scroller {
+  border-radius: 50px;
+  animation-name: scroller;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+@keyframes scroller {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+/* The Club Button Animation  */
+.the-club-button::before,
+.the-club-button::after {
+  content: "";
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 200%;
+  height: 250%;
+  bottom: 0;
+  transition: opacity 1.2s ease-out, bottom 1.2s ease-out, left 1.2s ease-out;
+}
+.the-club-button::before {
+  background-image: url("./assets/club-bg-1.svg");
+  left: 0;
+}
+
+.the-club-button::after {
+  background-image: url("./assets/club-bg-2.svg");
+  right: 0;
+}
+
+.the-club-button:hover::before {
+  bottom: -150%;
+  left: -200px;
+  opacity: 1;
+}
+.the-club-button:hover::after {
+  bottom: -150%;
+  right: -200px;
+  opacity: 1;
+}
+
+/* ----------------------------------------------- HERO SECTION END ---------------------- */
+
+/* -------------------------------------------------- RED BANNER START ---------------------  */
+.red-banner {
+  animation: redscroller 7s linear infinite;
+}
+
+@keyframes redscroller {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* ----------------------------------------------- ABOUT US SECTION START --------------------  */
+.about-us {
+  object-fit: cover;
+  object-position: top left;
+}
+
+/* ------------------------------------------------ Tournament Auto Scroller Section Start ---------  */
+.comm {
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Setup for the bottom border On tournament-partners Section */
+.tournament-partners-border::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tournament-partners-border:hover::after {
+  transform: scaleX(1);
+}
+
+/* Setup for the bottom border On The Mission Section */
+
+/* Setup for the bottom border */
+.mission-border::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 0% 50%; /* Animate from left to right */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Setup for the top border */
+.mission-border::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 100% 50%; /* Animate from right to left */
+  transition: transform 0.5s ease-in-out;
+}
+
+.mission-border:hover::after {
+  transform: scaleX(1); /* Animate bottom border in */
+}
+
+.mission-border:hover::before {
+  transform: scaleX(1); /* Animate top border in */
+}
+
+/* --------------------------------------------------- How to play Section */
+
+.transition-all {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.initial-hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.hover-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 924px) {
+  .initial-hidden,
+  .hover-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s;
+  }
+  .images-hidden {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 925px) {
+  .images-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .play-border:hover .images-hidden {
+    opacity: 1;
+  }
+}
+
+/* Setup for the bottom border */
+.play-border::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Setup for the top border */
+.play-border::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.play-border:hover::after {
+  transform: scaleX(1);
+}
+
+.play-border:hover::before {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------- team-border  */
+.team-border::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.team-border:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* --------------------team Image Hover  */
+.black_bac {
+  z-index: 3 !important;
+  width: 246px !important;
+  height: 246px !important;
+  top: -10px !important;
+  background: black !important;
+  border-radius: 50% !important;
+  transform: scale(1);
+  opacity: 0 !important;
+  transition: 1.3s !important;
+}
+
+.user-twitter-info .e-con-inner:hover .black_bac {
+  transform: scale(0);
+  opacity: 1 !important;
+}
+
+.twitter-e-icon {
+  z-index: 2 !important;
+  opacity: 0 !important;
+  transition: 0.8s !important;
+}
+
+.user-twitter-info .e-con-inner:hover .twitter-e-icon {
+  opacity: 1 !important;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.base-image {
+  display: block;
+  width: 100%; 
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out; 
+}
+
+.image-container:hover .overlay-image {
+  opacity: 1;
+}
