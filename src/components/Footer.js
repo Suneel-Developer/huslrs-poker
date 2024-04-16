@@ -1,8 +1,11 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 import FooterLine from "../assets/footer_line.png";
+import RightArrow from "../assets/email-right-arrow.svg";
+import TopWhiteArrow from "../assets/top-arrow.svg";
+import TopRedArrow from "../assets/top-red-arrow.svg";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaArrowRight, FaArrowUp, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaDiscord } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -10,7 +13,12 @@ const Footer = () => {
     <section className="bg-black border-t border-red-600">
       <div className="pt-36 px-5 xsm:px-10 md:px-20 xmd:px-5 flex items-start flex-col xmd:flex-row gap-5 justify-center xmd:justify-between">
         <div className="flex flex-col xmd:flex-row items-center xmd:items-start gap-12 w-full justify-center xmd:justify-start lg:w-[42%]">
-          <img src={Logo} alt="Huslrs Poker" className="w-[250px]" loading="lazy" />
+          <img
+            src={Logo}
+            alt="Huslrs Poker"
+            className="w-[250px]"
+            loading="lazy"
+          />
           <ul className="flex flex-col gap-3 items-center xmd:items-start w-full xmd:w-[168px]">
             <li className="text-white block cursor-pointer px-6 f-helvetica-bold text-sm transition-all duration-200 ease-linear hover:text-red_500">
               <Link
@@ -64,7 +72,7 @@ const Footer = () => {
 
         <div className="flex items-start flex-col lg:flex-row gap-12 xmd:gap-4 w-full lg:w-[58%]">
           <div className="w-full flex flex-col items-center xmd:items-start lg:w-[600px]">
-            <h5 className="text-white text-center xmd:text-start f-helvetica-medium  mb-[30px] font-normal uppercase text-sm">
+            <h5 className="text-white text-center xmd:text-start f-helvetica-medium  mb-[20px] font-normal uppercase text-sm md:text-lg">
               SIGN UP FOR OUR LATEST NEWS AND INSIGHTS
             </h5>
 
@@ -76,7 +84,7 @@ const Footer = () => {
               />
 
               <div className="h-full w-[47px] cursor-pointer hover:bg-[#202020] transition-all ease-linear duration-200 text-red_500 bg-white flex justify-center items-center">
-                <FaArrowRight className="text-2xl" />
+                <img src={RightArrow} alt="" />
               </div>
             </div>
 
@@ -122,11 +130,21 @@ const Footer = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="w-[180px] h-[180px] border text-white cursor-pointer hover:border-red_500 hover:text-red_500 transition-all duration-200 ease-linear border-white flex justify-center items-center"
+              className="image-container w-[180px] h-[180px] relative inline-block cursor-pointer"
             >
-              <FaArrowUp className="text-[100px] font-bold" />
+              <img
+                src={TopWhiteArrow}
+                alt="White Arrow"
+                className="bottom w-full h-full block"
+              />
+              <img
+                src={TopRedArrow}
+                alt="Red Arrow"
+                className="top w-full h-full block"
+              />
             </Link>
           </div>
+
         </div>
       </div>
 

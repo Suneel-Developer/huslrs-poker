@@ -26,26 +26,25 @@ const Play = () => {
 
           <div className="mb-10 md:mb-[76px] max-w-[640px] w-full">
             <p className="pb-4 text-white leading-[26px] text-[22px] f-helvetica-light">
-              Devilfish Poker is an NFT project which focuses on poker players
-              invovled in WEB3. By purchasing one of our Genesis NFTs you get
-              access to our exclusive Poker Club and have the opportunity to
-              enter 80+ tournaments with cash prizes available.
+              HUSLRS POKER is an Online Social Club which focuses on poker
+              players all across the world. By purchasing one of our Club
+              Packages you get access to our exclusive Poker Club and have the
+              opportunity to enter endless tournaments with cash prizes
+              available.
             </p>
             <p className="pb-4 text-white leading-[26px] text-[22px] f-helvetica-light">
-              With over{" "}
-              <span className="text-red_500 f-helvetica-medium">
-                1000 + traits
-              </span>{" "}
-              and the ability to customise your NFTs in the future we give you
-              the opportunity to create the perfect table identity.
+              Feel the thrill and excitement of an online multi-table poker
+              tournament. We’ve got every poker format covered, and you can play
+              them all! Check out our wide range of poker tournaments online.
+              There’s something for every poker player!
             </p>
 
             <p className="pb-4 text-white leading-[26px] text-[22px] f-helvetica-light">
-              To play in{" "}
-              <span className="text-red_500 f-helvetica-medium">
-                FREE TOURNAMENTS{" "}
+              To play in our
+              <span className="text-red_500 f-helvetica-bold mx-3">
+                CASH GAMES & TOURNAMENTS
               </span>
-              leading up to our upcoming mint day.
+              throughout the week.
             </p>
           </div>
 
