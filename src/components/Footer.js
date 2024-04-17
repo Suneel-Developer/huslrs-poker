@@ -5,7 +5,7 @@ import RightArrow from "../assets/email-right-arrow.svg";
 import TopWhiteArrow from "../assets/top-arrow.svg";
 import TopRedArrow from "../assets/top-red-arrow.svg";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -98,7 +98,8 @@ const Footer = () => {
             <ul className="flex items-center w-28 justify-between mt-8">
               <li>
                 <a
-                  href="#"
+                  href="https://discord.gg/pjT65vx4WM"
+                  target="_blank"
                   className="text-white text-[28px] transition-all duration-200 ease-linear hover:text-red_500"
                 >
                   <FaDiscord />
@@ -106,7 +107,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="twitter.com/huslrspoker"
+                  target="_blank"
                   className="text-white text-2xl transition-all duration-200 ease-linear hover:text-red_500"
                 >
                   <FaXTwitter />
@@ -114,10 +116,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/joinhuslrspoker"
+                  target="_blank"
                   className="text-white text-2xl transition-all duration-200 ease-linear hover:text-red_500"
                 >
-                  <FaLinkedin />
+                  <FaTelegramPlane />
                 </a>
               </li>
             </ul>

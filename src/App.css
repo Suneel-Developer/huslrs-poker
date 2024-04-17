@@ -264,7 +264,7 @@ body {
   margin-right: 6.9rem;
   margin-bottom: 17px;
   transform: rotate(-8.7deg);
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 .animation-img2 {
   z-index: 2;
@@ -272,65 +272,28 @@ body {
   top: 60px;
   right: 200px;
   transform: rotate(-1.5deg);
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 .animation-img3 {
   z-index: 4;
   transform: rotate(0.06deg);
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .animation-img4 {
   z-index: 1;
   margin-left: 108px;
   transform: rotate(3deg);
-  transition: 1s ease-in-out;
+  transition: .4 ease-in-out;
 }
 .animation-img5 {
   z-index: 1;
   transform: rotate(-1.25deg);
-  transition: 1s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  .animation-img2 {
-    z-index: 1001px;
-    top: 60px;
-    right: 150px;
-  }
-  
-  .animation-img4 {
-  z-index: 1;
-  margin-left: 0px;
-  transform: rotate(3deg);
-  transition: 1s ease-in-out;
-}
-
-}
-@media screen and (max-width: 450px) {
-  .animation-img2 {
-    z-index: 1001px;
-    top: 60px;
-    right:130px;
-  }
-  .animation-img{
-/* max-width: 130px; */
-width: 120px;
-  }
-  .animation-img1 {
-    margin-right: 3rem;
-}
-.animation-img2 {
-  /* z-index: 1001px; */
-  /* top: 60px; */
-  right: 100px;
-}
-
-}
-
-
-/* .vision-border:hover .animation-img1 {
-  transform: rotate(0deg);
+.vision-border:hover .animation-img1 {
+  transform: rotate(2deg);
 }
 .vision-border:hover .animation-img2 {
   transform: rotate(7deg);
@@ -339,17 +302,65 @@ width: 120px;
   transform: rotate(-6deg);
 }
 .vision-border:hover .animation-img4 {
-  transform: rotate(-6deg);
+  transform: rotate(-8deg);
 }
 .vision-border:hover .animation-img5 {
-  transform: rotate(7deg);
-} */
+  transform: rotate(8deg);
+}
 
- /* @media screen and(max-width: 700px) {
-  .animation-img2 {
-    
+@media screen and (max-width: 1024px) {
+  .vision-border:hover .animation-img1 {
+    transform: rotate(-8.7deg);
   }
- } */
+  .vision-border:hover .animation-img2 {
+    transform: rotate(-1.5deg);
+  }
+  .vision-border:hover .animation-img3 {
+    transform: rotate(0.06deg);
+  }
+  .vision-border:hover .animation-img4 {
+    transform: rotate(3deg);
+  }
+  .vision-border:hover .animation-img5 {
+    transform: rotate(-1.25deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .animation-img2 {
+    z-index: 1001px;
+    top: 60px;
+    right: 150px;
+  }
+
+  .animation-img4 {
+    z-index: 1;
+    margin-left: 0px;
+    transform: rotate(3deg);
+    transition: 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .animation-img2 {
+    z-index: 1001px;
+    top: 60px;
+    right: 130px;
+  }
+  .animation-img {
+    /* max-width: 130px; */
+    width: 120px;
+  }
+  .animation-img1 {
+    margin-right: 3rem;
+  }
+  .animation-img2 {
+    /* z-index: 1001px; */
+    /* top: 60px; */
+    right: 100px;
+  }
+}
+
 
 
 /* --------------------------------------------------- How to play Section */

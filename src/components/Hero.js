@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section id="hero" className="hero-container mt-10 md:mt-[100px] mb-3 py-20 px-5 h-full flex items-center flex-col relative">
       <div className="w-full">
-        <h1 className="text-5xl xsm:text-[64px] md:text-[96px] text-white leading-[65px] xsm:leading-[80px] md:leading-[92px] f-helvetica-black pb-10">
+        <h1 className="text-5xl xsm:text-[64px] md:text-[96px] text-white leading-[65px] xsm:leading-[80px] md:leading-[100px] f-helvetica-black pb-10">
           THE
           <span className="text-red_500 ml-6">
             NEXT <br /> EVOLUTION
@@ -23,11 +23,11 @@ const Hero = () => {
               SOCIAL POKER GAMES
             </h3>
           </div>
-          <button className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500">
+          <a href="https://t.me/joinhuslrspoker" target={"_blank"} className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500">
             <span className="absolute text-white text-xl z-10 f-helvetica-black">
               Enter the Club
             </span>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -39,6 +39,7 @@ const Hero = () => {
             smooth={true}
             offset={-70}
             duration={500}
+            href="google.com"
             className="border-white border h-[46px] cursor-pointer w-[23px] rounded-[50px] inline-block box-border text-center"
           >
             <div className="w-[2px] h-[8px] bg-white mt-0 scroller"></div>

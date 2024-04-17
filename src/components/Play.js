@@ -55,11 +55,11 @@ const Play = () => {
             For more details
           </h3>
           <div className="mt-8 mb-12">
-            <button className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500">
+            <a href="https://t.me/joinhuslrspoker" target={"_blank"} className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500">
               <span className="absolute text-white text-xl z-10 f-helvetica-black">
                 Enter the Club
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

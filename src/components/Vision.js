@@ -22,24 +22,14 @@ const Vision = () => {
           </h3>
 
           <p className="text-[22px] leading-[26px] f-helvetica-light">
-            Rooted in an esteemed 19-year history and inspired by poker legend
-            <span className="text-red_500 f-helvetica-medium">
-              {" "}
-              Dave Ulliot
-            </span>
-            , we’ve taken a bold leap into the future with WEB3 tournaments over
-            the past year. <br />
-            <br /> Our vision remains unwavering – to redefine the poker
-            experience. Drawing on our coveted history, we’re actively changing
-            the game, leveraging cutting-edge technology to transform how you
-            play poker. <br />
-            <br /> No longer confined by tradition, we’re infusing excitement
-            and modernity into every aspect of the poker landscape with out NFTs
-            and our{" "}
-            <span className="text-red_500 f-helvetica-medium">
-              FREE TO PLAY
-            </span>{" "}
-            Poker Club.
+            Giving our poker players that little bit extra to do what they love
+            - we’ve taken a bold leap into the future with tournaments over the
+            past year. <br /><br /> Our vision remains unwavering – to redefine the poker
+            experience. Dedicated on giving our members the best experience,
+            we’re actively changing the game, leveraging cutting-edge technology
+            to transform how you play poker. <br /><br /> ​No longer confined by tradition,
+            we’re infusing excitement and modernity into every aspect of the
+            poker landscape with our Social Poker Club.
           </p>
         </div>
 
@@ -47,11 +37,7 @@ const Vision = () => {
         <div className="w-full lg:w-[60%] lg:pr-10 gap-4 flex-col flex justify-end items-center lg:items-end relative">
           <div className="relative flex gap-10 sm:gap-20">
             <div className="animation-img1 animation-img ">
-              <img
-                src={Vision5}
-                alt=""
-                className="max-w-[200px] w-full "
-              />
+              <img src={Vision5} alt="" className="max-w-[200px] w-full " />
             </div>
             <div className="animation-img2 animation-img">
               <img
@@ -61,11 +47,7 @@ const Vision = () => {
               />
             </div>
             <div className="animation-img3 animation-img">
-              <img
-                src={Vision3}
-                alt=""
-                className="max-w-[200px] w-full"
-              />
+              <img src={Vision3} alt="" className="max-w-[200px] w-full" />
             </div>
           </div>
           <div className="relative flex gap-10 sm:gap-20">

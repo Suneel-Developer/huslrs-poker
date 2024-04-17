@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
-import { FaBars } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import ToggleIcon from "../assets/toggle.svg";
 import CloseIcon from "../assets/close.svg";
 import { Link } from "react-scroll";
@@ -103,7 +100,8 @@ const MobileHeader = () => {
             <ul className="flex items-center mr-2 gap-6">
               <li>
                 <a
-                  href="#"
+                  href="https://discord.gg/pjT65vx4WM"
+                  target="_blank"
                   className="text-white text-[35px] transition-all duration-200 ease-linear hover:text-red_500"
                 >
                   <FaDiscord />
@@ -111,7 +109,8 @@ const MobileHeader = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="twitter.com/huslrspoker"
+                  target="_blank"
                   className="text-white text-3xl transition-all duration-200 ease-linear hover:text-red_500"
                 >
                   <FaXTwitter />
@@ -119,10 +118,11 @@ const MobileHeader = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/joinhuslrspoker"
+                  target="_blank"
                   className="text-white text-3xl transition-all duration-200 ease-linear hover:text-red_500"
                 >
-                  <FaLinkedin />
+                  <FaTelegramPlane />
                 </a>
               </li>
             </ul>
