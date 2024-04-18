@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/footer-logo.png";
 import FooterLine from "../assets/footer_line.png";
 import RightArrow from "../assets/email-right-arrow.svg";
 import TopWhiteArrow from "../assets/top-arrow.svg";
@@ -19,6 +19,7 @@ const Footer = () => {
             className="w-[250px]"
             loading="lazy"
           />
+
           <ul className="flex flex-col gap-3 items-center xmd:items-start w-full xmd:w-[168px]">
             <li className="text-white block cursor-pointer px-6 f-helvetica-bold text-sm transition-all duration-200 ease-linear hover:text-red_500">
               <Link
@@ -107,7 +108,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="twitter.com/huslrspoker"
+                  href="https://twitter.com/huslrspoker"
                   target="_blank"
                   className="text-white text-2xl transition-all duration-200 ease-linear hover:text-red_500"
                 >

@@ -1,5 +1,5 @@
 import React from "react";
-import MissionIcon from "../assets/mission-icon.svg";
+import MissionIcon from "../assets/red-chip.png";
 
 const Mission = () => {
   return (
@@ -100,7 +100,7 @@ const Mission = () => {
             {/* List 04 : Building Trust and Transparency */}
             <div className="flex gap-6 items-start mb-3 md:mb-10">
               <div className="w-[100px] md:w-[80px]">
-                <img src={MissionIcon} alt="mission icon" loading="lazy" />
+                <img src={MissionIcon} alt="mission icon" loading="lazy" className="w-11" />
               </div>
               <div>
                 <h3 className="text-white f-helvetica-black leading-[26px] text-[22px] flex-1">

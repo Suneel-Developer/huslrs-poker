@@ -186,13 +186,12 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="text-white w-[3%] mt-5 hidden md:flex flex-col items-end">
+          <div className="text-white w-[1%] mt-10 hidden md:flex flex-col items-end">
             <p className="text-sm  f-helvetica-light">
               <span className="block leading-[40px]">H</span>
               <span className="block leading-[40px]">U</span>
               <span className="block leading-[40px]">S</span>
               <span className="block leading-[40px]">L</span>
-              <span className="block leading-[40px]">E</span>
               <span className="block leading-[40px]">R</span>
               <span className="block leading-[40px]">S</span>
 

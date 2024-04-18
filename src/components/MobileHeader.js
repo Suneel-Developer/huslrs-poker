@@ -109,7 +109,7 @@ const MobileHeader = () => {
               </li>
               <li>
                 <a
-                  href="twitter.com/huslrspoker"
+                  href="https://twitter.com/huslrspoker"
                   target="_blank"
                   className="text-white text-3xl transition-all duration-200 ease-linear hover:text-red_500"
                 >

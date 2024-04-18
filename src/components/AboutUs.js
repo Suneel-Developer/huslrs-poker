@@ -11,19 +11,21 @@ const AboutUs = () => {
           </h1>
 
           <p className="text-white text-lg md:text-[22px] md:leading-[26px] f-helvetica-light">
-            The next evolution of online poker, driving the migration to Web3.{" "}
+            The next evolution of Social Poker Clubs. <br />
             <br />
-            NFT holders will have access to the most dedicated and passionate
-            poker community in Web3 and will be at the forefront of the next
+            Club Members will have access to the most dedicated and passionate
+            poker community online, the ability to play where ever you are,
+            whenever you want and will be at the forefront of the next
             generation of online poker players. <br />
-            <br /> Delivering a greater poker experience while bringing
-            communities together, DevilFish in cooperation with the community is
-            building a Web3 native poker and gaming platform. <br />
-            <br /> Community members will also gain access to a bustling
-            environment focused on poker and NFTs. They will earn benefits as
-            being a part of DevilFish, get to interact with other players, earn
-            additional cash prizes and vote on the future direction of the
-            project.
+            <br />
+            Delivering a greater poker experience while bringing communities
+            together, HUSLRS in cooperation with the community is building a
+            native poker and gaming platform.
+            <br />
+            <br /> Community members will also gain access to an environment
+            focused on poker. They will earn benefits as being a part of HUSLRS,
+            get to interact with other players, earn additional cash prizes and
+            vote on the future direction of the project.
           </p>
         </div>
 

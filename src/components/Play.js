@@ -14,9 +14,7 @@ const Play = () => {
     >
       <div className="flex flex-col xmd:flex-row gap-5 items-start xmd:items-center">
         <div
-          className={`w-full md:w-[52.5%] px-5 md:pl-5 transition-all ${
-            hovered ? "hover-visible" : "initial-hidden"
-          }`}
+          className={`w-full md:w-[52.5%] px-5 md:pl-5 transition-all `}
         >
           <div className="pt-[68px] pb-14 md:pb-24">
             <h2 className="text-white f-helvetica-black text-[40px] md:text-[80px] uppercase">
@@ -64,9 +62,9 @@ const Play = () => {
         </div>
 
         <div
-          className={`w-full md:w-[47.5%] transition-all duration-500 ${
-            hovered ? "opacity-100" : "images-hidden"
-          }`}
+          className={`w-full md:w-[47.5%] transition-all duration-500
+           
+          `}
         >
           <div>
             <img
