@@ -57,13 +57,13 @@ const TournamentPartners = () => {
           </h1>
         </div>
 
-        <div className="px-2 mt-20 mb-14">
-          <div class="max-w-[1450px] mx-auto w-full flex overflow-hidden whitespace-nowrap">
+        <div className="px-10 mt-20 mb-14">
+          <div class="mx-auto w-full flex overflow-hidden whitespace-nowrap">
             <div className="comm flex gap-5">
               {partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[250px]"
+                  className="flex flex-col justify-start items-center w-[200px]"
                 >
                   <img
                     src={partner.img}
@@ -87,7 +87,7 @@ const TournamentPartners = () => {
               {partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[250px]"
+                  className="flex flex-col justify-start items-center w-[200px]"
                 >
                   <img
                     src={partner.img}
