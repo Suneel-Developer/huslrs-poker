@@ -51,19 +51,19 @@ const TournamentPartners = () => {
   return (
     <section className="tournament-partners-border pt-[70px] pb-[30px] relative block overflow-hidden">
       <div>
-        <div className="px-4 md:px-9">
+        <div className="px-4 md:px-5">
           <h1 className="text-white f-helvetica-black break-words uppercase text-2xl md:text-[36px] lg:text-[60px] lg:leading-[60px]">
             POKER TOURNAMENT PARTNERS
           </h1>
         </div>
 
-        <div className="px-4 mt-20 mb-14">
+        <div className="px-2 mt-20 mb-14">
           <div class="max-w-[1450px] mx-auto w-full flex overflow-hidden whitespace-nowrap">
             <div className="comm flex gap-5">
               {partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[202px]"
+                  className="flex flex-col justify-start items-center w-[250px]"
                 >
                   <img
                     src={partner.img}
@@ -87,7 +87,7 @@ const TournamentPartners = () => {
               {partners.map((partner) => (
                 <div
                   key={partner.id}
-                  className="flex flex-col justify-start items-center w-[202px]"
+                  className="flex flex-col justify-start items-center w-[250px]"
                 >
                   <img
                     src={partner.img}

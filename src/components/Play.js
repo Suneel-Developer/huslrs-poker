@@ -14,7 +14,9 @@ const Play = () => {
     >
       <div className="flex flex-col xmd:flex-row gap-5 items-start xmd:items-center">
         <div
-          className={`w-full md:w-[52.5%] px-5 md:pl-5 transition-all `}
+          className={`w-full md:w-[52.5%] px-5 md:pl-5 transition-all ${
+            hovered ? "hover-visible" : "initial-hidden"
+          }`}
         >
           <div className="pt-[68px] pb-14 md:pb-24">
             <h2 className="text-white f-helvetica-black text-[40px] md:text-[80px] uppercase">
@@ -53,7 +55,11 @@ const Play = () => {
             For more details
           </h3>
           <div className="mt-8 mb-12">
-            <a href="https://t.me/joinhuslrspoker" target={"_blank"} className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500">
+            <a
+              href="https://t.me/joinhuslrspoker"
+              target={"_blank"}
+              className="the-club-button relative h-[60px] w-[225px] rounded-[50px] overflow-hidden flex justify-center items-center border border-red_500"
+            >
               <span className="absolute text-white text-xl z-10 f-helvetica-black">
                 Enter the Club
               </span>
@@ -62,9 +68,9 @@ const Play = () => {
         </div>
 
         <div
-          className={`w-full md:w-[47.5%] transition-all duration-500
-           
-          `}
+          className={`w-full md:w-[47.5%] transition-all duration-500 ${
+            hovered ? "opacity-100" : "images-hidden"
+          }`}
         >
           <div>
             <img
